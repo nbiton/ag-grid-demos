@@ -22,7 +22,6 @@ export const PersistableFiltersPage = () => {
 
     const onGridReady = useCallback((params) => {
         setGridApi(params.api);
-        // this.gridColumnApi = params.columnApi;
     }, []);
 
     const handleFilterChanged = () => {
@@ -43,7 +42,6 @@ export const PersistableFiltersPage = () => {
 
     useEffect(() => {
         if (gridApi && initialFilterModel && isAfterLoad) {
-            console.log('setting filter state', initialFilterModel)
             gridApi.setFilterModel(initialFilterModel);
         }
     }, [gridApi, initialFilterModel, rowData, isAfterLoad])
@@ -53,6 +51,7 @@ export const PersistableFiltersPage = () => {
             <h2>Persistable filters</h2>
             <p>The state of the filters is persisted and retrieved from the URL's query string</p>
             <p>Change and activate some filters, then refresh to see it in action</p>
+            <p>Click "Reset Filters" below the table to deactivate all filters</p>
             <div
                 id="myGrid"
                 style={{height: 400, width: 1600}}
