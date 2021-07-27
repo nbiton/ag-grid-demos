@@ -1,4 +1,4 @@
-import React, {forwardRef, useState, useImperativeHandle, useEffect, useMemo, useCallback} from "react";
+import React, {forwardRef, useState, useImperativeHandle, useEffect} from "react";
 import {AgGridReact} from "ag-grid-react";
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-material.css';
@@ -35,7 +35,7 @@ const CustomFilter = forwardRef((props, ref) => {
     const { filterChangedCallback } = props;
     useEffect(() => {
         filterChangedCallback();
-    }, [year]);
+    }, [year, filterChangedCallback]);
 
     return (
         <div style={{display: "inline-block", width: "400px"}} onChange={onYearChange}>

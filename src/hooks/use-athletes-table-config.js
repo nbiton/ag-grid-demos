@@ -77,5 +77,6 @@ export const useAthletesTableConfig = (modifier = x => x) => {
                 // customFilter: CustomFilter,
             }
         });
-    }, [])
+        // eslint-disable-next-line
+    }, []);
 }

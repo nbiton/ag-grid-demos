@@ -50,9 +50,11 @@ const ButtonCellRenderer = props => {
         const ind = shapes.indexOf(cellValue)
         const nextInd = ind < shapes.length - 1 ? ind + 1 : 0;
         props.context.changeShape(props.rowIndex, shapes[nextInd]);
+        // eslint-disable-next-line
     }, [cellValue])
     const handleIncPrice = useCallback(() => {
         props.context.incPrice(props.rowIndex);
+        // eslint-disable-next-line
     },[]);
     return (
         <>
@@ -70,12 +72,6 @@ const initialData = [
     {make: "Ford", model: "Mondeo", price: 32000, shape: shapes[1]},
     {make: "Porsche", model: "Boxter", price: 72000, shape: shapes[2]}
 ];
-
-// let largerData = []
-//
-// for (let i = 0; i < 10000; i++) {
-//     largerData = largerData.concat(initialData);
-// }
 
 export const CustomRenderersPage = () => {
     const [data, setData] = useState(initialData);
