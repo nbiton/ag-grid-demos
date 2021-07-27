@@ -92,7 +92,7 @@ export const CustomRenderersPage = () => {
             <h2>Custom renderers and popover actions menu</h2>
             <p>The rows contain a "shape" text field. There is a custom rendered column to draw an svg that matches each shape.</p>
             <p>A second custom rendered column is used to draw a button which opens an overlay menu using Material-UI to show options that mutate the table data</p>
-            <div className="ag-theme-material" style={{height: 400, width: 1280}}>
+            <div className="ag-theme-material" style={{height: 400, width: '100%'}}>
                 <AgGridReact
                     rowData={data}
                     context={context}

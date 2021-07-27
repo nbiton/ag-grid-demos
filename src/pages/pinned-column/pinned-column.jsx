@@ -15,7 +15,7 @@ export const PinnedColumnPage = () => {
             <p>The "Athlete" column is configured to be pinned to the left, so it doesn't get scrolled out of view</p>
             <div
                 id="myGrid"
-                style={{height: 400, width: 800}}
+                style={{height: 400, width: '50%'}}
                 className="ag-theme-material"
             >
                 <AgGridReact

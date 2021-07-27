@@ -17,7 +17,7 @@ export const RowSelectionPage = () => {
             <p>In this example, clicking on each row activates single select, but using the checkboxes on the left, holding down SHIFT or COMMAND/CTRL, multi-selection is possible</p>
             <div
                 id='myGrid'
-                style={{height: 400, width: 1400}}
+                style={{height: 400, width: '100%'}}
                 className='ag-theme-material'
             >
                 <AgGridReact

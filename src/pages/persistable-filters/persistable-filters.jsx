@@ -54,7 +54,7 @@ export const PersistableFiltersPage = () => {
             <p>Click "Reset Filters" below the table to deactivate all filters</p>
             <div
                 id="myGrid"
-                style={{height: 400, width: 1600}}
+                style={{height: 400, width: '100%'}}
                 className="ag-theme-material"
             >
                 <AgGridReact

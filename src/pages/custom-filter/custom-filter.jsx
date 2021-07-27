@@ -65,7 +65,7 @@ export const CustomFilterPage = () => {
             <p>The "Athlete" column has its filter turned off, and the year column is using a custom filter which contains a custom React component</p>
             <div
                 id="myGrid"
-                style={{height: 400, width: 1600}}
+                style={{height: 400, width: '100%'}}
                 className="ag-theme-material"
             >
                 <AgGridReact

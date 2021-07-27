@@ -47,7 +47,7 @@ export const SavedColumnPositionAndSortPage = () => {
             <h5>Note: the column state data is stored in the URL as base64 since it's a long JSON and it can be made more compact this way</h5>
             <div
                 id='myGrid'
-                style={{height: 400, width: 1600}}
+                style={{height: 400, width: '100%'}}
                 className='ag-theme-material'
             >
                 <AgGridReact

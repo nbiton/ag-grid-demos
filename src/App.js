@@ -14,6 +14,8 @@ import {List, ListItem, ListItemText} from "@material-ui/core";
 const StyledFlex = styled.div`
     display: flex;
     flex: 1;
+    width: 100vw;
+    overflow: no-content;
 `
 
 const StyledTitle = styled.h1`

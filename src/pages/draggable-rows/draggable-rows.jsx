@@ -7,7 +7,6 @@ import {useAthletesRowData, useAthletesTableConfig} from "../../hooks";
 export const DraggableRowsPage = () => {
     const config = useAthletesTableConfig(config => {
         config.columnDefs[0].rowDrag = true;
-        // config.columnDefs[0].rowDragManaged = true;
         return config;
     });
     const [rowData] = useAthletesRowData();
@@ -18,7 +17,7 @@ export const DraggableRowsPage = () => {
             <p>Rows can be dragged and sorted manually by clicking on the handle to the right, as long as no sorts or filters are active</p>
             <div
                 id='myGrid'
-                style={{height: 400, width: 1600}}
+                style={{height: 400, width: '100%'}}
                 className='ag-theme-material'
             >
                 <AgGridReact
